@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?Alegreya:ital@1&family=Lora:ital,wght@1,500;1,600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="script.js" defer></script>
     <title>Adrian Bernabeu | Personal Website | Curriculum Vitae</title>
 </head>
@@ -23,8 +24,7 @@
             <a id="more-btn"><b>More &rarr;</b></a>
         </div>
         <div id="frontpage-img-container">
-            <!--<img id="frontpage-img" src="./Images/Person_Picture.png">-->
-            <img id="frontpage-img" src="./Images/4ad68f39ae7c09dfa9116654fea1877e-removebg-preview.png">
+            <img id="frontpage-img" alt="Picture of Adrian Bernabeu" src="./Images/Adrian_Bernabeu_Frontpage.png">
         </div>
     </section>
     <section id="about-me">
@@ -37,7 +37,7 @@
         </div>
         <div id="about-me-flashcard">
             <div id="about-me-img-container">
-                <img id="about-me-img" alt="Portrait of Random Person" src="Images/OMB2022.jpg">
+                <img id="about-me-img" alt="Picture of Adrian Bernabeu" src="./Images/Adrian_Bernabeu_About_Me.JPG">
             </div>
             <div id="about-me-info">
                 <div><p>Name: </p><p>Adrian Bernabeu</p></div>
@@ -173,7 +173,7 @@
     <section id="achievements">
         <h2><b>Achievements</b></h2>
         <div class="breakline" style="width: 300px; margin-left: 30px;"></div>
-        <p></p>
+        <p><i>"Happiness is not in the mere possession of money, it lies in the joy of achievement, in the thrill of creative effort."</i> -Franklin D. Roosevelt<br>Even though I am not very experienced with money, since I don't have much, I can recognise the value of this quote. When I achieve something it's not because I want to get something in exchange, it's because I love what I do and I really enjoy the challenge that I am facing.</p>
         <div id="achievements-container">
             <div class="achievement">
                 <div class="achievement-img-container">
@@ -193,39 +193,45 @@
                     <p>4th Price at the Belgian Math Olympiad (OMB) 2022</p>
                 </div>
             </div>
-            <div class="achievement">
-                <div class="achievement-img-container">
-                    <img class="achievement-img" alt="Poster of the 2022 OMB" src="./Images/OMB2022.jpg">
-                </div>
-                <div class="achievement-description">
-                    <div class="breakline" style="width: 300px; margin: 3vh auto;"></div>
-                    <p>10th Place at the EEB3 Cross 2022-2023</p>
-                </div>
-            </div>
         </div>
     </section>
     <section id="experience">
         <div class="placeholder" style="height: 50px;"></div>
         <h2><b>Work Experiences</b></h2>
         <div class="breakline" style="width: 400px; margin: auto;"></div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores incidunt at a eos autem dolores laborum voluptates odit eveniet magni libero fuga beatae, dolorem necessitatibus perspiciatis facere est exercitationem sapiente.</p>
+        <p><i>"Every accomplishment starts with the decision to try"</i> -John F. Kennedy</p>
         <div id="experiences-container">
-            <div class="experience" id="judo-experience">
-                <div class="experience-img-container">
-                    <img alt="Logo of the Seishin Judo Club" class="experience-img" src="./Images/seishin (1).png">
-                </div>
-                <div class="experience-text">
-                    <p>Judo Teacher Assistant</p>
-                    <p style="font-size: 0.8rem !important; padding: 2px;">(Click for more)</p>
+            <div class="experience-card-container">
+                <div class="experience-card">
+                    <div class="experience-card-front">
+                        <div class="experience-img-container">
+                            <img alt="Logo of the Seishin Judo Club" class="experience-img" src="./Images/seishin (1).png">
+                        </div>
+                        <p>Judo Teacher Assistant</p>
+                        <p style="font-size: 0.8rem !important; padding: 2px;">(Hover for more)</p>
+                    </div>
+                    <div class="experience-card-back">
+                        <p style="font-size: 2rem;">2021 - Present</p>
+                        <p>Help my coach giving judo classes to younger judokas, with ages ranging from 3 to 12 years old.</p>
+                        <p>Occasionnaly give class to younger judokas without the supervision of the coach.</p>
+                    </div>
                 </div>
             </div>
-            <div class="experience" id="EY-experience">
-                <div class="experience-img-container">
-                    <img alt="Logo of Ernst & Young" class="experience-img" src="./Images/EY_logo_2019.svg.png">
-                </div>
-                <div class="experience-text">
-                    <p>Internship At Ernst & Young</p>
-                    <p style="font-size: 0.8rem !important; padding: 2px;">(Click for more)</p>
+            <div class="experience-card-container">
+                <div class="experience-card">
+                    <div class="experience-card-front">
+                        <div class="experience-img-container">
+                            <img alt="Logo of the Seishin Judo Club" class="experience-img" src="./Images/EY_logo_2019.svg.png">
+                        </div>
+                        <p>Internship At Ernst & Young</p>
+                        <p style="font-size: 0.8rem !important; padding: 2px;">(Hover for more)</p>
+                    </div>
+                    <div class="experience-card-back">
+                        <p style="font-size: 2rem;">June 2022</p>
+                        <p>Performed an internship at Ernst & Young during one week.</p>
+                        <p>Learned about entrepreneurship and business funding.</p>
+                        <p>Learned about consulting in a big company</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,15 +269,21 @@
                 </div>
             </div>
         </div>
-        <!--
-            EEB3 App
-            Forum
-            Github
-            ...
-        -->
     </section>
     <section id="contact">
         <h2>Contact</h2>
+        <div class="breakline" style="width: 300px; margin-left: 30px;"></div>
+        <ul id="contacts-list">
+            <div>
+                <li class="fa">&#xf0e0; Private Email: <a style="font-size: 1.7rem;" href="mailto: adrianivobernabeu@gmail.com">adrianivobernabeu@gmail.com</a></li>
+            </div>
+            <div>
+                <li class="fa">&#xf0e0; School Email: <a style="font-size: 1.7rem;" href="mailto: bernabad@student.eursc.eu">bernabad@student.eursc.eu</a></li>
+            </div>
+            <div>
+                <li class="fa">&#xf08c; LinkedIn: <a style="font-size: 1.7rem;" href="https://www.linkedin.com/in/adrian-bernabeu-vaarik-a64b49243">Adrian Bernabeu</a></li>
+            </div>
+        </ul>
     </section>
 </body>
 </html>
