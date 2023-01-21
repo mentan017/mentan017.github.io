@@ -237,8 +237,12 @@ h2{
     backface-visibility: hidden;
 }
 .experience-card-back{
+    background-color: #d6dfe2;
     height: 50%;
-    margin: 25% 0;
+    top: 0;
+    right: 0;
+    padding: calc(25% - 10px) 0;
+    border-radius: 30px;
     transform: rotateY(180deg);
 }
 .experience-img{
