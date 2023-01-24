@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 4</title>
+</head>
+<body>
+    <div style="text-align: center; width: 50%; padding: 20px; border: solid black 3px; margin: auto;">
+        <p>Quelle est la réponse de l'énigme de "Bilbo, Le Hobbit"?</p>
+        <input id="answer-input" placeholder="Réponse" style="font-size: 1.5rem;">
+    </div>
+    <script>
+        document.getElementById("answer-input").addEventListener("keypress", async function(e){
+            e.stopImmediatePropagation();
+            var answer = (this.value).toLowerCase();
+            answer = await hashValue(answer);
+            if(answer == "c2729f4b1ef2b25dd4ae5ff24d94bb1fc87e0b2690daaeea7229b590eba31b40"){
+                alert(`Le prochain lien est /${atob("UDNXVU41NzRL")}`);
+            }
+        });
+        async function hashValue(variable){
+            var varUint8 = new TextEncoder().encode(variable);
+            var hashBuffer = await crypto.subtle.digest('SHA-256', varUint8);
+            var hashArray = Array.from(new Uint8Array(hashBuffer));
+            var hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return(hashHex);
+        }
+    </script>
+</body>
+</html>

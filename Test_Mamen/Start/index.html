@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: white;
+        }
+        #message{
+            color: transparent;
+        }
+        #message:hover{
+            color: black;
+        }
+    </style>
+    <title>Chasse au tresor de Test Mamen</title>
+</head>
+<body>
+    <div style="width: 50%; text-align: center; padding: 10px; border: solid black 3px; margin: 50px auto;">
+        <h1><u>Chasse au tresor de Test Mamen</u></h1>
+        <p style="font-size: 1.2rem;">Cheres camarades, bienvenue a la chasse au tresor de Test Mamen!<br>
+        Ceci est une chasse au tresor organise par Mentan017. Durant cette chasse au tresor, vous devrez collaborer ensemble pour resoudre les problemes et enigmes que je vous ai prepare.<br>
+        Il y aura des questions que tout le monde peut repondre et d'autres auquelles que seul certains individus auront la reponse. La majorite des questions son digitales, vous pourez les faire derriere l'ordinateur, mais certaines questions auront besoin d'interagir avec le monde exterieur pour recuperer de l'information.<br>
+        Ceci devrait etre toute l'information que vous aurez besoin, si vous avez une question ou vous etes bloques, n'hesitez pas a me contacter pas MP ou en personne.
+        Bonne chance et que l'aventure commence!</p>
+        <p>Pour commencer, cherche un message cache avec ta souris</p>
+        <p style="font-size: 0.7rem;">Ceci est ma premiere chasse au tresor, dites moi s'il y a un probleme. Les critiques constructives seront acceptees. Merci beaucoup pour votre participation.</p>    
+    </div>
+    <div id="message" style="position: fixed; padding: 20px; bottom: 50%; left: 100px;">
+        <p>/KWTRYTFKF</p>
+    </div>
+    <script>
+        window.onload = GenerateCode();
+        function GenerateCode(){
+            let r = (Math.random()+1).toString(36).substring(4).toUpperCase();
+            console.log(r);
+        }
+    </script>
+</body>
+</html>
