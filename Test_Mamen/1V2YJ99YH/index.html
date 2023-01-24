@@ -7,6 +7,26 @@
     <title>Challenge 6</title>
 </head>
 <body>
-    
+    <div style="text-align: center; width: 50%; padding: 20px; border: solid black 3px; margin: auto;">
+        <p>Frank Sinatra</p>
+        <input id="answer-input" placeholder="Réponse" style="font-size: 1.5rem;">
+    </div>
+    <script>
+        document.getElementById("answer-input").addEventListener("keypress", async function(e){
+            e.stopImmediatePropagation();
+            var answer = (this.value).toLowerCase();
+            answer = await hashValue(answer);
+            if(answer == '98b1690510df1bf21fe13018a2641b19c7f3871f289b523b395d0bffa3574be9'){
+                alert(`Le prochain lien est /${atob("QkpVUzJBTk9I")}`)
+            }
+        });
+        async function hashValue(variable){
+            var varUint8 = new TextEncoder().encode(variable);
+            var hashBuffer = await crypto.subtle.digest('SHA-256', varUint8);
+            var hashArray = Array.from(new Uint8Array(hashBuffer));
+            var hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return(hashHex);
+        }
+    </script>
 </body>
 </html>
