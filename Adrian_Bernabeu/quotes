@@ -7,3 +7,13 @@
 “We are what we repeatedly do. Excellence then, is not an act, but a habit.” -Aristotle, philosopher
 
 “Hard work beats talent when talent doesn’t work hard.” -Tim Notke, coach
+
+<div data-index="0" data-status="active" class="project-description" style="background-color: blue;">
+            <p>Div 1</p>
+        </div>
+        <div data-index="1" data-status="inactive" class="project-description" style="background-color: red;">
+            <p>Div 2</p>
+        </div>
+        <div data-index="2" data-status="inactive" class="project-description" style="background-color: green;">
+            <p>Div 3</p>
+        </div>

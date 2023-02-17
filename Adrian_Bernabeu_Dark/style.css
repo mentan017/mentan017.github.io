@@ -285,3 +285,70 @@ h3{
     border-bottom: #FFF323 solid 2px;
     margin-top: 15px;
 }
+#projects{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+#projects-menu{
+    height: 100%;
+    border-right: #FFF323 solid 2px;
+    z-index: 1;
+}
+#projects h2{
+    color: #FFF323;
+    text-align: center;
+    font-size: 5rem;
+    padding: 50px 70px 20px 70px;
+}
+#projects-nav{
+    margin-top: 100px;
+}
+.project-btn{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    border: #FFF323 solid 1px;
+    margin: 5px;
+    cursor: pointer;
+}
+.project-btn:hover{
+    background-color: #44465f;
+    box-shadow: 0 0 15px 3px #FFF323;
+}
+#projects-content{
+    background-color: #44465f;
+}
+.project{
+    position: absolute;
+    height: 100vh;
+}
+.project-title{
+    font-size: 4rem;
+    padding: 90px;
+}
+.project-main{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+}
+.project-description{
+    font-size: 2rem;
+    padding: 30px 70px;
+}
+.project-footer{
+    padding: 30px 70px;
+}
+.project-footer h5{
+    font-size: 3rem;
+    padding: 20px;
+}
+.project-footer ul{
+    padding: 10px;
+    padding-left: 50px;
+}
+.project-footer li{
+    font-size: 2rem;
+    padding: 5px;
+}
+.project-img img{
+    width: 350px;
+}
