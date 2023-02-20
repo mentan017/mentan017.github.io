@@ -257,13 +257,13 @@ h3{
 #projects-content{
     position: relative;
     background-color: #44465f;
+    border-left: #FFF323 solid 2px;
     overflow: hidden;
 }
 .project{
     position: absolute;
     min-height: 100vh;
     background-color: #44465f;
-    border-left: #FFF323 solid 2px;
 }
 .active-project, .previous-project{
     transition: 2s;
