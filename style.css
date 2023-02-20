@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1139px){
     section{
         text-align: center;
     }
@@ -98,7 +98,7 @@
         padding: 10px;
     }
 }
-@media screen and (min-width: 376px){
+@media screen and (min-width: 1140px){
     section{
         min-height: 100vh;
     }
