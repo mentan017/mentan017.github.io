@@ -2,7 +2,7 @@ body{
     background-color: #2f3041;
     color: #ebebeb;
 }
-section{min-height: 100vh;}
+section:not(#contact){min-height: 100vh;}
 h2{
     color: #FFF323;
     font-size: 5rem;
@@ -229,6 +229,48 @@ h3{
     border-bottom: #FFF323 solid 2px;
     margin-top: 15px;
 }
+#activities{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr max-content 1fr;
+}
+#activities-title{
+    background: linear-gradient(90deg, #2f3041 0 calc(50% - 3px), #FFF323 calc(50% - 3px) calc(50% + 3px), #2f3041 calc(50% + 3px) 100%);
+    padding: 15vh 40px;
+    border: #FFF323 solid 6px;
+    border-width: 6px 0;
+}
+#activities-title h2{
+    background-color: #2f3041;
+    padding: 50px;
+    border-radius: 50px;
+    border: #FFF323 solid 6px;
+}
+.activities-container{
+    display: grid;
+    width: calc(100% - 30px);
+    height: 100vh;
+    justify-content: center;
+}
+.activity{
+    display: grid;
+    justify-content: center;
+}
+.activity div{
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    border: #FFF323 solid 6px;
+    margin: auto;
+}
+.activity h4{
+    font-size: 2.5rem;
+    padding: 15px;
+}
+.activity p{
+    font-size: 1.5rem;
+}
 #projects{
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -300,6 +342,20 @@ h3{
 }
 .project-footer li{padding: 5px;}
 .project-img img{width: 350px;}
+#contact{
+    text-align: center;
+    height: calc(10.4rem + 170px) !important;
+}
+#contact h2{
+    padding: 40px;
+}
+#contact li{
+    font-size: 1.8rem;
+    padding: 5px;
+}
+#contact a{
+    color: #FFF323;
+}
 
 @media screen and (max-width: 1400px) {
     #skills-main-container{
