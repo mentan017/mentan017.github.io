@@ -50,17 +50,12 @@
         width: 90%;
         height: 35vh;
         border-radius: 10px;
-        margin: auto;
+        margin: 3px auto;
         object-fit: cover;
         object-position: left top;
     }
     #personalize-content p{
-        background-color: #f6ed1c;
-        width: max-content;
-        font-size: 1.4rem;
-        padding: 15px;
-        border-radius: 15px;
-        margin: 10px auto;
+        display: none;
     }
     #order h2{
         font-size: 2.5rem;
