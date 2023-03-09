@@ -25,11 +25,12 @@ section{
     background: linear-gradient(#147eae, #6cb9d8 45%);
 }
 #frontpage-img-container{
-    width: 677px;
+    width: 40%;
+    max-width: 677px;
     margin: auto;
 }
 #frontpage-img{
-    width: 600px;
+    width: calc(100% - 77px);
     height: 80vh;
     padding: 15px 70px;
     border: solid #fffef8;
