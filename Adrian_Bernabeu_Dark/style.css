@@ -162,8 +162,12 @@ h3{
     padding: 50px 7%;
 }
 #achievements-container{
-    height: calc(100vh - 114px - 5rem);
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 .achievement{
     height: 50vh;
@@ -306,6 +310,7 @@ h3{
     position: absolute;
     min-height: 100vh;
     background-color: #44465f;
+    overflow-y: scroll;
 }
 .active-project, .previous-project{
     transition: 2s;
